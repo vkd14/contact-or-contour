@@ -1,0 +1,162 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.9520718455314636,
+    "val_caicedo_af1": 0.06811971923008878,
+    "best_val_caicedo_af1": 0.06811971923008878,
+    "learning_rate": 0.0003,
+    "seconds": 8.169539451599121
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.7835346603393555,
+    "val_caicedo_af1": 0.45969610085113566,
+    "best_val_caicedo_af1": 0.45969610085113566,
+    "learning_rate": 0.0002981717185783779,
+    "seconds": 7.833475589752197
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.6939580869674683,
+    "val_caicedo_af1": 0.773583619611116,
+    "best_val_caicedo_af1": 0.773583619611116,
+    "learning_rate": 0.00029273189266983027,
+    "seconds": 7.157126426696777
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.6325758218765258,
+    "val_caicedo_af1": 0.7786785418591796,
+    "best_val_caicedo_af1": 0.7786785418591796,
+    "learning_rate": 0.0002838144688419726,
+    "seconds": 7.067875146865845
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.5828161859512329,
+    "val_caicedo_af1": 0.7797825654753485,
+    "best_val_caicedo_af1": 0.7797825654753485,
+    "learning_rate": 0.00027163902366467965,
+    "seconds": 7.088481426239014
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.5440795373916626,
+    "val_caicedo_af1": 0.8696661993825444,
+    "best_val_caicedo_af1": 0.8696661993825444,
+    "learning_rate": 0.00025650535700620224,
+    "seconds": 7.228379249572754
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.510469982624054,
+    "val_caicedo_af1": 0.8678399511071487,
+    "best_val_caicedo_af1": 0.8696661993825444,
+    "learning_rate": 0.0002387861099654322,
+    "seconds": 6.961261987686157
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.4849677860736847,
+    "val_caicedo_af1": 0.8637290564719325,
+    "best_val_caicedo_af1": 0.8696661993825444,
+    "learning_rate": 0.00021891758921132264,
+    "seconds": 6.985487461090088
+  },
+  {
+    "epoch": 9,
+    "train_loss": 0.4648855590820313,
+    "val_caicedo_af1": 0.8766325251218139,
+    "best_val_caicedo_af1": 0.8766325251218139,
+    "learning_rate": 0.00019738902366467966,
+    "seconds": 7.189648151397705
+  },
+  {
+    "epoch": 10,
+    "train_loss": 0.4512651491165161,
+    "val_caicedo_af1": 0.8757711148088708,
+    "best_val_caicedo_af1": 0.8766325251218139,
+    "learning_rate": 0.00017473051805847427,
+    "seconds": 6.972923755645752
+  },
+  {
+    "epoch": 11,
+    "train_loss": 0.43833516716957094,
+    "val_caicedo_af1": 0.8566287582226504,
+    "best_val_caicedo_af1": 0.8766325251218139,
+    "learning_rate": 0.00015149999999999997,
+    "seconds": 6.959835767745972
+  },
+  {
+    "epoch": 12,
+    "train_loss": 0.4278828024864197,
+    "val_caicedo_af1": 0.8763259020064001,
+    "best_val_caicedo_af1": 0.8766325251218139,
+    "learning_rate": 0.00012826948194152572,
+    "seconds": 6.933510065078735
+  },
+  {
+    "epoch": 13,
+    "train_loss": 0.42011987924575805,
+    "val_caicedo_af1": 0.8765919496773452,
+    "best_val_caicedo_af1": 0.8766325251218139,
+    "learning_rate": 0.0001056109763353203,
+    "seconds": 6.921018600463867
+  },
+  {
+    "epoch": 14,
+    "train_loss": 0.41396918773651126,
+    "val_caicedo_af1": 0.8716361098813179,
+    "best_val_caicedo_af1": 0.8766325251218139,
+    "learning_rate": 8.40824107886773e-05,
+    "seconds": 7.027686834335327
+  },
+  {
+    "epoch": 15,
+    "train_loss": 0.4102262735366821,
+    "val_caicedo_af1": 0.8733546597984492,
+    "best_val_caicedo_af1": 0.8766325251218139,
+    "learning_rate": 6.421389003456775e-05,
+    "seconds": 6.950845956802368
+  },
+  {
+    "epoch": 16,
+    "train_loss": 0.40591205716133116,
+    "val_caicedo_af1": 0.8752019221050502,
+    "best_val_caicedo_af1": 0.8766325251218139,
+    "learning_rate": 4.649464299379769e-05,
+    "seconds": 6.984663486480713
+  },
+  {
+    "epoch": 17,
+    "train_loss": 0.40334527254104613,
+    "val_caicedo_af1": 0.8682705165379911,
+    "best_val_caicedo_af1": 0.8766325251218139,
+    "learning_rate": 3.1360976335320314e-05,
+    "seconds": 7.036563158035278
+  },
+  {
+    "epoch": 18,
+    "train_loss": 0.40296963810920716,
+    "val_caicedo_af1": 0.8747895596855438,
+    "best_val_caicedo_af1": 0.8766325251218139,
+    "learning_rate": 1.918553115802738e-05,
+    "seconds": 7.019911289215088
+  },
+  {
+    "epoch": 19,
+    "train_loss": 0.40142117023468016,
+    "val_caicedo_af1": 0.8723447293930363,
+    "best_val_caicedo_af1": 0.8766325251218139,
+    "learning_rate": 1.0268107330169699e-05,
+    "seconds": 6.960986852645874
+  },
+  {
+    "epoch": 20,
+    "train_loss": 0.3998680543899536,
+    "val_caicedo_af1": 0.8728826368433699,
+    "best_val_caicedo_af1": 0.8766325251218139,
+    "learning_rate": 4.828281421622057e-06,
+    "seconds": 6.973694324493408
+  }
+]

@@ -1,0 +1,9 @@
+# Versions used for the reported results (Python 3.12.3, CUDA 12.8)
+torch==2.12.0.dev20260326  # nightly build with RTX 5090 support; any torch>=2.6 with CUDA should work
+segmentation-models-pytorch==0.5.0
+numpy==2.4.3
+scipy==1.17.1
+scikit-image==0.26.0
+opencv-python-headless==4.13.0
+matplotlib==3.10.8
+cellpose==3.1.1.2  # Cellpose baselines only

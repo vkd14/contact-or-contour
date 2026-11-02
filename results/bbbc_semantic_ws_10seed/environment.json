@@ -1,0 +1,51 @@
+{
+  "torch": "2.12.0.dev20260326+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "protocol_sha256": "653c9ef6acbae7605ef708ec35de19d81500c252c0cf612a41e8317aa36f9939",
+  "config": {
+    "dataset": "BBBC039v1 official split",
+    "task": "Fair semantic baseline: one foreground head (0.5 Dice + 0.5 BCE), checkpoint selected by validation Caicedo object F1 after distance-transform watershed (h=0.5, sigma=2), then watershed h/sigma re-selected on validation",
+    "purpose": "Removes the checkpoint-selection asymmetry between the semantic baseline (previously Dice-selected) and the two-head models",
+    "models": {
+      "vanilla_semantic_ws_b7": "vanilla_b7"
+    },
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "epochs": 20,
+    "batch_size": 8,
+    "image_size": 512,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "contact_weight": 0.5,
+    "contact_radius": 1,
+    "contact_thresholds": [
+      0.5
+    ],
+    "augmentation": "uniform rotations by multiples of 90 degrees and horizontal flip with probability 0.5",
+    "loss": "foreground Dice+BCE plus 0.5 times contact-boundary Dice+positive-weighted BCE",
+    "selection": "highest validation Caicedo object-F1; contact threshold selected on validation only",
+    "postprocessing": "remove predicted contact pixels from foreground to form markers, then assign all foreground pixels to their nearest marker",
+    "primary_endpoint": "Caicedo average object F1 over IoU thresholds 0.50 to 0.90",
+    "secondary_endpoints": [
+      "DICE1",
+      "DICE2",
+      "AJI",
+      "DQ",
+      "SQ",
+      "PQ"
+    ],
+    "target": "semantic"
+  }
+}

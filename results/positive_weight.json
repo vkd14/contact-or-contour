@@ -1,0 +1,12 @@
+{
+ "contact": {
+  "pixel_fraction": 0.0033893585205078125,
+  "weight_mean": 50.0,
+  "clipped_share": 1.0
+ },
+ "contour": {
+  "pixel_fraction": 0.04887855529785156,
+  "weight_mean": 19.737201062357588,
+  "clipped_share": 0.0
+ }
+}

@@ -1,0 +1,49 @@
+{
+  "dataset": "NucleusSegDataExtended official AttentionBoost split",
+  "purpose": "Matched target ablation: identical model, loss, training-image selection and decoder, but the second head learns all nucleus contours instead of only nucleus-nucleus contacts.",
+  "image_size": 512,
+  "batch_size": 2,
+  "epochs": 60,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "gradient_clip": 1.0,
+  "contact_weight": 0.5,
+  "contact_radius": 1,
+  "foreground_threshold": 0.5,
+  "contact_thresholds": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7
+  ],
+  "min_sizes": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "models": {
+    "standard_contour_b7": "vanilla_b7"
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "augmentation": "Uniform 90-degree rotations and independent horizontal and vertical flips with probability 0.5.",
+  "selection": "Fixed final epoch; contact threshold and minimum instance size selected using official training images only; test images decoded once.",
+  "test_time_augmentation": false,
+  "primary_endpoint": "Bilkent nucleus-level micro F1, reported separately for Huh7 and HepG2.",
+  "published_comparator": "AttentionBoost: Huh7 F1 0.954 +/- 0.005; HepG2 F1 0.919 +/- 0.008 over five runs.",
+  "target": "full_contour"
+}

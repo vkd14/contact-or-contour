@@ -1,0 +1,47 @@
+{
+  "model": "vanilla_carved_b7",
+  "variant": "vanilla_b7",
+  "seed": 6,
+  "n_test": 50,
+  "epochs": 20,
+  "best_epoch": 16,
+  "best_val_caicedo_af1": 0.8951533603001601,
+  "selected_contact_threshold": 0.7,
+  "validation_selected_contact_threshold": 0.7,
+  "validation_threshold_scores": {
+    "0.3": 0.8665224209106721,
+    "0.4": 0.8721594469700275,
+    "0.5": 0.8951533603001601,
+    "0.6": 0.9000419173868444,
+    "0.7": 0.9022617253727865
+  },
+  "locked_decoder": null,
+  "validation_mean": {
+    "dice1": 0.965681461093631,
+    "dice2": 0.8119804167567479,
+    "aji": 0.879608057625056,
+    "dq": 0.952456788368956,
+    "sq": 0.9194909970106561,
+    "pq": 0.8759992957290609,
+    "caicedo_af1": 0.9022617253727865,
+    "symmetric_best_dice": 0.8965007414242778,
+    "n_reference": 117.84,
+    "n_prediction": 110.72
+  },
+  "training_code_sha256": null,
+  "parameters": 68163698,
+  "initial_state_sha256": "4772e8aca37f7c7724a5b3346c08bd5242b7b25829d030308417de2c5e8282d1",
+  "checkpoint_sha256": "1fa1a63b93e8074d020e62ac21b0b769d1cb7a342af1c5ce4b81b401a67da543",
+  "protocol_sha256": "091db2e2d76afc5a5f0a529079320bf4c17194a4430fbf3061ca2b3cf398c7f4",
+  "seconds": 174.39667344093323,
+  "mean": {
+    "dice1": 0.9667328063681719,
+    "dice2": 0.8133474724435359,
+    "aji": 0.8689686971514032,
+    "dq": 0.9422438207709095,
+    "sq": 0.9150923788643222,
+    "pq": 0.8640072897235772,
+    "caicedo_af1": 0.8880405553351681,
+    "symmetric_best_dice": 0.8882070641967889
+  }
+}

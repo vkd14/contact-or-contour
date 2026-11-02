@@ -1,0 +1,47 @@
+{
+  "dataset": "BBBC039v1 official split",
+  "task": "Instance segmentation via full-foreground and touching-contact heads",
+  "purpose": "Validation-only pilot: native-resolution training (40 epochs); test images are never decoded",
+  "models": {
+    "vanilla_contact_b7": "vanilla_b7"
+  },
+  "seeds": [
+    0,
+    1
+  ],
+  "epochs": 40,
+  "batch_size": 8,
+  "image_size": 512,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "gradient_clip": 1.0,
+  "contact_weight": 0.5,
+  "contact_radius": 1,
+  "contact_thresholds": [
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7
+  ],
+  "augmentation": "uniform rotations by multiples of 90 degrees and horizontal flip with probability 0.5",
+  "loss": "foreground Dice+BCE plus 0.5 times contact-boundary Dice+positive-weighted BCE",
+  "selection": "highest validation Caicedo object-F1; contact threshold selected on validation only",
+  "postprocessing": "remove predicted contact pixels from foreground to form markers, then assign all foreground pixels to their nearest marker",
+  "primary_endpoint": "Caicedo average object F1 over IoU thresholds 0.50 to 0.90",
+  "secondary_endpoints": [
+    "DICE1",
+    "DICE2",
+    "AJI",
+    "DQ",
+    "SQ",
+    "PQ"
+  ],
+  "native_resolution": true,
+  "train_crop": 512,
+  "pad_to": [
+    544,
+    704
+  ],
+  "validation_only": true
+}

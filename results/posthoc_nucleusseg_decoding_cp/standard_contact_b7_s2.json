@@ -1,0 +1,486 @@
+{
+  "run": "standard_contact_b7_s2",
+  "selection": "official training images, pooled Bilkent nucleus F1",
+  "settings": {
+    "plain": {
+      "training_grid": [
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.02,
+          "min_size": 16,
+          "train_nucleus_f1": 0.6497386109036595
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.02,
+          "min_size": 64,
+          "train_nucleus_f1": 0.7931513188338732
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.02,
+          "min_size": 128,
+          "train_nucleus_f1": 0.7874324987727048
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.02,
+          "min_size": 192,
+          "train_nucleus_f1": 0.7719475277497477
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.02,
+          "min_size": 256,
+          "train_nucleus_f1": 0.7571721311475411
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.02,
+          "min_size": 384,
+          "train_nucleus_f1": 0.7287958115183246
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.05,
+          "min_size": 16,
+          "train_nucleus_f1": 0.8999999999999999
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.05,
+          "min_size": 64,
+          "train_nucleus_f1": 0.9242957746478875
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.05,
+          "min_size": 128,
+          "train_nucleus_f1": 0.9264772214704556
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.05,
+          "min_size": 192,
+          "train_nucleus_f1": 0.9236396890717878
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.05,
+          "min_size": 256,
+          "train_nucleus_f1": 0.9120521172638437
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.05,
+          "min_size": 384,
+          "train_nucleus_f1": 0.8551992225461614
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.1,
+          "min_size": 16,
+          "train_nucleus_f1": 0.9441800086542622
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.1,
+          "min_size": 64,
+          "train_nucleus_f1": 0.9488986784140969
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.1,
+          "min_size": 128,
+          "train_nucleus_f1": 0.9488789237668162
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.1,
+          "min_size": 192,
+          "train_nucleus_f1": 0.9474161378059838
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.1,
+          "min_size": 256,
+          "train_nucleus_f1": 0.9404216315307057
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.1,
+          "min_size": 384,
+          "train_nucleus_f1": 0.9019422074846044
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.2,
+          "min_size": 16,
+          "train_nucleus_f1": 0.9543859649122808
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.2,
+          "min_size": 64,
+          "train_nucleus_f1": 0.9604971149578341
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.2,
+          "min_size": 128,
+          "train_nucleus_f1": 0.9635299414678072
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.2,
+          "min_size": 192,
+          "train_nucleus_f1": 0.9522510231923602
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.2,
+          "min_size": 256,
+          "train_nucleus_f1": 0.9464040311497939
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.2,
+          "min_size": 384,
+          "train_nucleus_f1": 0.9156853509185116
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.3,
+          "min_size": 16,
+          "train_nucleus_f1": 0.9460062472110665
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.3,
+          "min_size": 64,
+          "train_nucleus_f1": 0.9513513513513513
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.3,
+          "min_size": 128,
+          "train_nucleus_f1": 0.95125284738041
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.3,
+          "min_size": 192,
+          "train_nucleus_f1": 0.9467401285583104
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.3,
+          "min_size": 256,
+          "train_nucleus_f1": 0.9390581717451524
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.3,
+          "min_size": 384,
+          "train_nucleus_f1": 0.9090909090909092
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.5,
+          "min_size": 16,
+          "train_nucleus_f1": 0.8696470588235294
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.5,
+          "min_size": 64,
+          "train_nucleus_f1": 0.8717463322290582
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.5,
+          "min_size": 128,
+          "train_nucleus_f1": 0.8702290076335878
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.5,
+          "min_size": 192,
+          "train_nucleus_f1": 0.8653846153846154
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.5,
+          "min_size": 256,
+          "train_nucleus_f1": 0.8604538870111058
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.5,
+          "min_size": 384,
+          "train_nucleus_f1": 0.8422604422604423
+        }
+      ],
+      "selected": {
+        "config": {
+          "decoder": "component_preserving",
+          "threshold": 0.2,
+          "min_size": 128
+        },
+        "train_nucleus_f1": 0.9635299414678072,
+        "test": {
+          "Huh7": {
+            "nucleus_f1": 0.9620826259196378,
+            "aji": 0.8516075351178709,
+            "pq": 0.8538031885016398
+          },
+          "HepG2": {
+            "nucleus_f1": 0.9180713445707567,
+            "aji": 0.7849406258027392,
+            "pq": 0.7760263791352845
+          }
+        }
+      }
+    },
+    "tta8": {
+      "training_grid": [
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.02,
+          "min_size": 16,
+          "train_nucleus_f1": 0.7105841018884497
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.02,
+          "min_size": 64,
+          "train_nucleus_f1": 0.7685589519650655
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.02,
+          "min_size": 128,
+          "train_nucleus_f1": 0.7644710578842316
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.02,
+          "min_size": 192,
+          "train_nucleus_f1": 0.7644084934277048
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.02,
+          "min_size": 256,
+          "train_nucleus_f1": 0.7497435897435898
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.02,
+          "min_size": 384,
+          "train_nucleus_f1": 0.7202099737532809
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.05,
+          "min_size": 16,
+          "train_nucleus_f1": 0.8940677966101697
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.05,
+          "min_size": 64,
+          "train_nucleus_f1": 0.9213085764809903
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.05,
+          "min_size": 128,
+          "train_nucleus_f1": 0.9171570846536894
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.05,
+          "min_size": 192,
+          "train_nucleus_f1": 0.9191176470588235
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.05,
+          "min_size": 256,
+          "train_nucleus_f1": 0.9042503503035966
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.05,
+          "min_size": 384,
+          "train_nucleus_f1": 0.8550654386815317
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.1,
+          "min_size": 16,
+          "train_nucleus_f1": 0.9333333333333333
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.1,
+          "min_size": 64,
+          "train_nucleus_f1": 0.9474613686534217
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.1,
+          "min_size": 128,
+          "train_nucleus_f1": 0.9516129032258065
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.1,
+          "min_size": 192,
+          "train_nucleus_f1": 0.9491833030852994
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.1,
+          "min_size": 256,
+          "train_nucleus_f1": 0.9360919540229885
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.1,
+          "min_size": 384,
+          "train_nucleus_f1": 0.9059990552668872
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.2,
+          "min_size": 16,
+          "train_nucleus_f1": 0.9546247818499128
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.2,
+          "min_size": 64,
+          "train_nucleus_f1": 0.9640479360852198
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.2,
+          "min_size": 128,
+          "train_nucleus_f1": 0.9614003590664273
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.2,
+          "min_size": 192,
+          "train_nucleus_f1": 0.9580135440180587
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.2,
+          "min_size": 256,
+          "train_nucleus_f1": 0.9535095715587967
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.2,
+          "min_size": 384,
+          "train_nucleus_f1": 0.9261682242990654
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.3,
+          "min_size": 16,
+          "train_nucleus_f1": 0.9575221238938053
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.3,
+          "min_size": 64,
+          "train_nucleus_f1": 0.9615384615384617
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.3,
+          "min_size": 128,
+          "train_nucleus_f1": 0.9598194130925508
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.3,
+          "min_size": 192,
+          "train_nucleus_f1": 0.9572338489535941
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.3,
+          "min_size": 256,
+          "train_nucleus_f1": 0.9515096065873743
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.3,
+          "min_size": 384,
+          "train_nucleus_f1": 0.9269662921348314
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.5,
+          "min_size": 16,
+          "train_nucleus_f1": 0.923006416131989
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.5,
+          "min_size": 64,
+          "train_nucleus_f1": 0.92577224527432
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.5,
+          "min_size": 128,
+          "train_nucleus_f1": 0.9229340761374187
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.5,
+          "min_size": 192,
+          "train_nucleus_f1": 0.919196637085474
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.5,
+          "min_size": 256,
+          "train_nucleus_f1": 0.9146341463414634
+        },
+        {
+          "decoder": "component_preserving",
+          "threshold": 0.5,
+          "min_size": 384,
+          "train_nucleus_f1": 0.8950381679389313
+        }
+      ],
+      "selected": {
+        "config": {
+          "decoder": "component_preserving",
+          "threshold": 0.2,
+          "min_size": 64
+        },
+        "train_nucleus_f1": 0.9640479360852198,
+        "test": {
+          "Huh7": {
+            "nucleus_f1": 0.9608938547486033,
+            "aji": 0.8716825783058603,
+            "pq": 0.8614722065472445
+          },
+          "HepG2": {
+            "nucleus_f1": 0.9313271604938271,
+            "aji": 0.8012702995522324,
+            "pq": 0.7836901723978358
+          }
+        }
+      }
+    }
+  }
+}

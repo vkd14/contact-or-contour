@@ -1,0 +1,110 @@
+{
+  "model": "IW-Cellpose (interface-weighted flow/cellprob loss), random init",
+  "W": 3.0,
+  "seed": 1,
+  "epochs": 500,
+  "train_diameter_px": 25.03996805109783,
+  "validation_grid": [
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": -1.0,
+      "val_dice1": 0.9648823817179009,
+      "val_aji": 0.9122793714021421,
+      "val_dq": 0.9627132361605797,
+      "val_sq": 0.9191024958519585,
+      "val_pq": 0.8849970165324241,
+      "val_caicedo_af1": 0.9114165490283664
+    },
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": 0.0,
+      "val_dice1": 0.9702133671615161,
+      "val_aji": 0.9231303801790958,
+      "val_dq": 0.9614110757653195,
+      "val_sq": 0.93274826319841,
+      "val_pq": 0.8969320482660247,
+      "val_caicedo_af1": 0.9216423345464289
+    },
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": 1.0,
+      "val_dice1": 0.964385933330129,
+      "val_aji": 0.9127999576193152,
+      "val_dq": 0.9595764447320522,
+      "val_sq": 0.9207181863521986,
+      "val_pq": 0.883676563484803,
+      "val_caicedo_af1": 0.910713186082982
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": -1.0,
+      "val_dice1": 0.9440579609219866,
+      "val_aji": 0.8908820337419932,
+      "val_dq": 0.9438750295945273,
+      "val_sq": 0.8950473035606443,
+      "val_pq": 0.8622041716218657,
+      "val_caicedo_af1": 0.8846296853753483
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": 0.0,
+      "val_dice1": 0.9501673561773001,
+      "val_aji": 0.900942838767449,
+      "val_dq": 0.9416662678053914,
+      "val_sq": 0.9100944692757367,
+      "val_pq": 0.8746705186075387,
+      "val_caicedo_af1": 0.8968241581934033
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": 1.0,
+      "val_dice1": 0.9443699231040665,
+      "val_aji": 0.8917142331196546,
+      "val_dq": 0.9388115116988593,
+      "val_sq": 0.899448542908279,
+      "val_pq": 0.8617853839741637,
+      "val_caicedo_af1": 0.8874245545093458
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": -1.0,
+      "val_dice1": 0.9453038442682711,
+      "val_aji": 0.8934554485894496,
+      "val_dq": 0.9434698087760921,
+      "val_sq": 0.8946818812494874,
+      "val_pq": 0.8615070096601061,
+      "val_caicedo_af1": 0.8835717239457912
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": 0.0,
+      "val_dice1": 0.9522813526268002,
+      "val_aji": 0.9059912894875791,
+      "val_dq": 0.9428269990807641,
+      "val_sq": 0.9098480040063126,
+      "val_pq": 0.8755052919658252,
+      "val_caicedo_af1": 0.8974335636128528
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": 1.0,
+      "val_dice1": 0.9453785974316894,
+      "val_aji": 0.893754902219792,
+      "val_dq": 0.9383681768474367,
+      "val_sq": 0.8993995425031289,
+      "val_pq": 0.8613257151406113,
+      "val_caicedo_af1": 0.8868978756041541
+    }
+  ],
+  "selected": {
+    "flow_threshold": 0.4,
+    "cellprob_threshold": 0.0,
+    "val_dice1": 0.9702133671615161,
+    "val_aji": 0.9231303801790958,
+    "val_dq": 0.9614110757653195,
+    "val_sq": 0.93274826319841,
+    "val_pq": 0.8969320482660247,
+    "val_caicedo_af1": 0.9216423345464289
+  },
+  "train_seconds": 660.8913769721985
+}

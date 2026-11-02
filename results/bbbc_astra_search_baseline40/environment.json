@@ -1,0 +1,58 @@
+{
+  "torch": "2.12.0.dev20260326+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "protocol_sha256": "9538f24bcb628ecfc78c8f7ab74a02d98598325f1d5c514f89e895b52a98c1f8",
+  "config": {
+    "dataset": "BBBC039v1 official split",
+    "task": "Instance segmentation via full-foreground and touching-contact heads",
+    "purpose": "Astra validation-only arm baseline40; no test access",
+    "models": {
+      "vanilla_contact_b7": "vanilla_b7"
+    },
+    "seeds": [
+      0,
+      1
+    ],
+    "epochs": 40,
+    "batch_size": 8,
+    "image_size": 512,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "contact_weight": 0.5,
+    "contact_radius": 1,
+    "contact_thresholds": [
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7
+    ],
+    "augmentation": "uniform rotations by multiples of 90 degrees and horizontal flip with probability 0.5",
+    "loss": "Foreground Dice+BCE plus 0.5 contact Dice+positive-weighted BCE; focal modulation only when contact_focal_gamma > 0",
+    "selection": "Best epoch by validation objF1 at contact threshold 0.5; pooled two-seed decoder/TTA grid; rank TTA objF1, then AJI, then PQ",
+    "postprocessing": "Astra validation grid; foreground threshold 0.5, min object size 16; see scripts/astra_utils.py",
+    "primary_endpoint": "Caicedo average object F1 over IoU thresholds 0.50 to 0.90",
+    "secondary_endpoints": [
+      "DICE1",
+      "DICE2",
+      "AJI",
+      "DQ",
+      "SQ",
+      "PQ"
+    ],
+    "native_resolution": true,
+    "train_crop": 512,
+    "pad_to": [
+      544,
+      704
+    ],
+    "validation_only": true,
+    "checkpoint_decoder": {
+      "decoder": "component_nearest"
+    },
+    "astra_study": "bbbc_astra_search_baseline40",
+    "target": "contact"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "model": "Cellpose 3, random init",
+  "seed": 3,
+  "epochs": 500,
+  "train_diameter_px": 31.71750305430741,
+  "training_grid": [
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": -1.0,
+      "train_nucleus_f1": 0.9569080408707241
+    },
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": 0.0,
+      "train_nucleus_f1": 0.9541611036938139
+    },
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": 1.0,
+      "train_nucleus_f1": 0.9497554468652735
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": -1.0,
+      "train_nucleus_f1": 0.9499561018437226
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": 0.0,
+      "train_nucleus_f1": 0.9485261768587769
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": 1.0,
+      "train_nucleus_f1": 0.9456953642384105
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": -1.0,
+      "train_nucleus_f1": 0.9470459518599562
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": 0.0,
+      "train_nucleus_f1": 0.9464912280701754
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": 1.0,
+      "train_nucleus_f1": 0.9428320140721196
+    }
+  ],
+  "selected": {
+    "flow_threshold": 0.4,
+    "cellprob_threshold": -1.0,
+    "train_nucleus_f1": 0.9569080408707241
+  },
+  "seconds": 187.6586127281189,
+  "test": {
+    "Huh7": {
+      "nucleus_f1": 0.9747616376892877,
+      "aji": 0.8835821015565494,
+      "pq": 0.8792410464199112
+    },
+    "HepG2": {
+      "nucleus_f1": 0.947166921898928,
+      "aji": 0.7971769809613702,
+      "pq": 0.7969839146963992
+    }
+  }
+}

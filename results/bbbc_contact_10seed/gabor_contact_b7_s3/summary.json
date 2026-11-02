@@ -1,0 +1,32 @@
+{
+  "model": "gabor_contact_b7",
+  "variant": "gabor_b7",
+  "seed": 3,
+  "n_test": 50,
+  "epochs": 20,
+  "best_epoch": 13,
+  "best_val_caicedo_af1": 0.8939980063127098,
+  "selected_contact_threshold": 0.5,
+  "validation_threshold_scores": {
+    "0.3": 0.8883528370125265,
+    "0.4": 0.8932777124522697,
+    "0.5": 0.8939980063127098,
+    "0.6": 0.8923364806353551,
+    "0.7": 0.8737986341733942
+  },
+  "parameters": 68354655,
+  "initial_state_sha256": "3c913197d7a06bcae9829b528293da1aee9caa4358e1454764ed335dea5632d0",
+  "checkpoint_sha256": "e8f61f13e33f52775fe912e3ae1c4000e719dde29392cb4c55a7ebc22ba31744",
+  "protocol_sha256": "0510b1ae502c1618e543a1bfd4214434551f96df2d38fd9c1f7efa5cb50a63cd",
+  "seconds": 192.036771774292,
+  "mean": {
+    "dice1": 0.9667567172775005,
+    "dice2": 0.8092971748444245,
+    "aji": 0.870396239399501,
+    "dq": 0.9395290039933328,
+    "sq": 0.9154320707597954,
+    "pq": 0.8616619667556474,
+    "caicedo_af1": 0.8880851165756838,
+    "symmetric_best_dice": 0.8878358317786844
+  }
+}

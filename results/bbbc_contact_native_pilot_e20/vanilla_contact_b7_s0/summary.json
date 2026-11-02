@@ -1,0 +1,19 @@
+{
+  "model": "vanilla_contact_b7",
+  "variant": "vanilla_b7",
+  "seed": 0,
+  "validation_only": true,
+  "epochs": 20,
+  "best_epoch": 15,
+  "best_val_caicedo_af1": 0.9109651764694741,
+  "selected_contact_threshold": 0.5,
+  "validation_threshold_scores": {
+    "0.3": 0.9059597549306747,
+    "0.4": 0.9096191184244437,
+    "0.5": 0.9109651764694741,
+    "0.6": 0.9102545993701956,
+    "0.7": 0.8998935963704165
+  },
+  "protocol_sha256": "4c17c2e056739ac6549ff3a823849e3c7367a05ac1d23a23ae9e1e0179266d46",
+  "seconds": 170.64135551452637
+}

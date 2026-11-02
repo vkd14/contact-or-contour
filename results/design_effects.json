@@ -1,0 +1,195 @@
+{
+  "dataset": "BBBC039 test (50 images); per-image AJI averaged over seeds",
+  "effects": [
+    {
+      "label": "Decoder: tuned watershed vs. connected components",
+      "a": "semantic_ws",
+      "b": "semantic_cc",
+      "difference": 0.15232264023834396,
+      "ci95": [
+        0.1264434455488881,
+        0.1783633618023135
+      ],
+      "images_better": 49,
+      "n_images": 50
+    },
+    {
+      "label": "Boundary supervision: full contour vs. semantic + watershed",
+      "a": "contour",
+      "b": "semantic_ws",
+      "difference": 0.026533479315415373,
+      "ci95": [
+        0.01868069517146962,
+        0.03514006196550995
+      ],
+      "images_better": 39,
+      "n_images": 50
+    },
+    {
+      "label": "Target: contact vs. full contour",
+      "a": "contact",
+      "b": "contour",
+      "difference": 0.01443036606645675,
+      "ci95": [
+        0.011050248525737442,
+        0.01795367963996251
+      ],
+      "images_better": 46,
+      "n_images": 50
+    },
+    {
+      "label": "Foreground: intact vs. contacts carved out",
+      "a": "contact",
+      "b": "carved",
+      "difference": 0.0020202175182390913,
+      "ci95": [
+        0.00044192681032971385,
+        0.003603080821865259
+      ],
+      "images_better": 33,
+      "n_images": 50
+    },
+    {
+      "label": "Inference: TTA + selected decoder",
+      "a": "contact_tta",
+      "b": "contact",
+      "difference": 0.00796990613866309,
+      "ci95": [
+        0.006774957210640418,
+        0.00916581196931275
+      ],
+      "images_better": 48,
+      "n_images": 50
+    },
+    {
+      "label": "Resolution: native vs. 512^2 (both with TTA)",
+      "a": "native_tta",
+      "b": "contact_tta",
+      "difference": 0.010348926124967179,
+      "ci95": [
+        0.00636229307991834,
+        0.015649412665928522
+      ],
+      "images_better": 47,
+      "n_images": 50
+    },
+    {
+      "label": "Representation: Cellpose vs. contact model",
+      "a": "cellpose",
+      "b": "contact",
+      "difference": 0.03407592987824111,
+      "ci95": [
+        0.02860688318794353,
+        0.040731801658202435
+      ],
+      "images_better": 50,
+      "n_images": 50
+    },
+    {
+      "label": "Contact head added to Cellpose",
+      "a": "contact_cellpose",
+      "b": "cellpose",
+      "difference": -0.007829363365734664,
+      "ci95": [
+        -0.011669132503016665,
+        -0.004717191331355449
+      ],
+      "images_better": 11,
+      "n_images": 50
+    },
+    {
+      "label": "Target: contact vs. full contour (TTA, same decoder grid)",
+      "a": "contact_tta",
+      "b": "contour_tta",
+      "difference": 0.011020279832315403,
+      "ci95": [
+        0.00794656013460052,
+        0.01428202559826557
+      ],
+      "images_better": 45,
+      "n_images": 50
+    },
+    {
+      "label": "Representation: Cellpose vs. best contact model (searched recipe, native + TTA)",
+      "a": "cellpose",
+      "b": "searched",
+      "difference": 0.008834834081531087,
+      "ci95": [
+        0.0042893532340559076,
+        0.012948435200622072
+      ],
+      "images_better": 40,
+      "n_images": 50
+    },
+    {
+      "label": "Target: contact vs. full contour (NucleusSegData Huh7)",
+      "difference": -0.011966750500164573,
+      "ci95": [
+        -0.024216974113405475,
+        0.0017635740846734893
+      ],
+      "images_better": 2,
+      "n_images": 11
+    },
+    {
+      "label": "Target: contact vs. full contour (NucleusSegData HepG2)",
+      "difference": 0.00409719059110139,
+      "ci95": [
+        -0.009393802313164556,
+        0.015982905918710655
+      ],
+      "images_better": 14,
+      "n_images": 25
+    },
+    {
+      "label": "Target: contact vs. full contour (NucleusSegData Huh7, widened grid + TTA)",
+      "difference": -0.00529202789807437,
+      "ci95": [
+        -0.014515296394106104,
+        0.007325918643459877
+      ],
+      "images_better": 2,
+      "n_images": 11
+    },
+    {
+      "label": "Target: contact vs. full contour (NucleusSegData HepG2, widened grid + TTA)",
+      "difference": 0.012943247631078493,
+      "ci95": [
+        0.003510430239603967,
+        0.023452696313647794
+      ],
+      "images_better": 16,
+      "n_images": 25
+    },
+    {
+      "label": "Boundary supervision: full contour vs. semantic + watershed (DSB external)",
+      "difference": 0.0352,
+      "ci95": [
+        0.0218,
+        0.0491
+      ],
+      "images_better": 37,
+      "n_images": 53
+    },
+    {
+      "label": "Target: contact vs. full contour (DSB external)",
+      "difference": 0.0005,
+      "ci95": [
+        -0.0078,
+        0.0082
+      ],
+      "images_better": 27,
+      "n_images": 53
+    },
+    {
+      "label": "Decoder: tuned watershed vs. connected components (DSB external)",
+      "difference": 0.06825996638945325,
+      "ci95": [
+        0.04747775499227312,
+        0.08987400937011941
+      ],
+      "images_better": 38,
+      "n_images": 53
+    }
+  ]
+}

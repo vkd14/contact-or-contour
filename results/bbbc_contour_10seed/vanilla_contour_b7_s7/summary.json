@@ -1,0 +1,32 @@
+{
+  "model": "vanilla_contour_b7",
+  "variant": "vanilla_b7",
+  "seed": 7,
+  "n_test": 50,
+  "epochs": 20,
+  "best_epoch": 19,
+  "best_val_caicedo_af1": 0.8972880273000731,
+  "selected_contact_threshold": 0.5,
+  "validation_threshold_scores": {
+    "0.3": 0.8862937391427361,
+    "0.4": 0.8923851782336659,
+    "0.5": 0.8972880273000731,
+    "0.6": 0.8971166464976917,
+    "0.7": 0.896800273148497
+  },
+  "parameters": 68163698,
+  "initial_state_sha256": "4e06af67deacfd1bfe2276f3009648011d421921755c909167bd2989fe8f51c7",
+  "checkpoint_sha256": "3e628a55b2998c8698b5420d5dee16eb9935ad9504c2371ecd9d4a113527de43",
+  "protocol_sha256": "7014e49fdc92fc40caaa68e7fa7366af50b3c7660c1eacfd7d342e74d651821e",
+  "seconds": 200.71781277656555,
+  "mean": {
+    "dice1": 0.9644527609310195,
+    "dice2": 0.8021291733075341,
+    "aji": 0.8406723459041002,
+    "dq": 0.9324791861725302,
+    "sq": 0.911931130116572,
+    "pq": 0.8524639021722414,
+    "caicedo_af1": 0.8813964093739619,
+    "symmetric_best_dice": 0.8683554091155008
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "model": "Cellpose 3, random init",
+  "seed": 7,
+  "epochs": 500,
+  "train_diameter_px": 25.03996805109783,
+  "validation_grid": [
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": -1.0,
+      "val_caicedo_af1": 0.8937987986910039
+    },
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": 0.0,
+      "val_caicedo_af1": 0.9030456860875203
+    },
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": 1.0,
+      "val_caicedo_af1": 0.8898110452580046
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": -1.0,
+      "val_caicedo_af1": 0.8897347125378733
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": 0.0,
+      "val_caicedo_af1": 0.9019550431646948
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": 1.0,
+      "val_caicedo_af1": 0.8884771519792934
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": -1.0,
+      "val_caicedo_af1": 0.8887880967545752
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": 0.0,
+      "val_caicedo_af1": 0.90180768605163
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": 1.0,
+      "val_caicedo_af1": 0.8881071652263628
+    }
+  ],
+  "selected": {
+    "flow_threshold": 0.4,
+    "cellprob_threshold": 0.0,
+    "val_caicedo_af1": 0.9030456860875203
+  },
+  "train_seconds": 449.9152340888977,
+  "test_seconds_50_images": 12.471320390701294,
+  "mean": {
+    "dice1": 0.970646868034275,
+    "aji": 0.9055706309885696,
+    "dq": 0.9563229935344677,
+    "sq": 0.9295181329273086,
+    "pq": 0.8897456927548649,
+    "caicedo_af1": 0.912951534804997
+  }
+}

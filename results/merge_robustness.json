@@ -1,0 +1,38 @@
+{
+ "bbbc039": {
+  "contact_pct": 20.84,
+  "contour_pct": 26.77,
+  "difference_points": -5.93,
+  "image_bootstrap_ci": [
+   -7.696,
+   -4.446
+  ],
+  "two_way_ci": [
+   -8.601,
+   -3.529
+  ],
+  "seed_sd_points": {
+   "contact": 2.2,
+   "contour": 2.19
+  },
+  "n_images": 50
+ },
+ "external_dsb2018": {
+  "contact_pct": 30.91,
+  "contour_pct": 27.64,
+  "difference_points": 3.27,
+  "image_bootstrap_ci": [
+   1.348,
+   4.763
+  ],
+  "two_way_ci": [
+   -0.419,
+   7.339
+  ],
+  "seed_sd_points": {
+   "contact": 5.23,
+   "contour": 2.38
+  },
+  "n_images": 53
+ }
+}

@@ -1,0 +1,130 @@
+{
+  "run": "bbbc_semantic_ws_10seed/vanilla_semantic_ws_b7_s7",
+  "variant": "vanilla_b7",
+  "kind": "semantic",
+  "selection": "official validation split, mean Caicedo object F1",
+  "settings": {
+    "plain": {
+      "inference_seconds_100_images": 2.7150514125823975,
+      "validation_grid": [
+        {
+          "decoder": "components",
+          "val_caicedo_af1": 0.750821826391816,
+          "val_aji": 0.6725763787547127
+        },
+        {
+          "decoder": "distance_watershed",
+          "h": 0.5,
+          "sigma": 0.0,
+          "val_caicedo_af1": 0.6100051724118085,
+          "val_aji": 0.7065507683321343
+        },
+        {
+          "decoder": "distance_watershed",
+          "h": 0.5,
+          "sigma": 1.0,
+          "val_caicedo_af1": 0.8729361384052986,
+          "val_aji": 0.8498704910299899
+        },
+        {
+          "decoder": "distance_watershed",
+          "h": 0.5,
+          "sigma": 2.0,
+          "val_caicedo_af1": 0.8729181184467087,
+          "val_aji": 0.8436561166127045
+        },
+        {
+          "decoder": "distance_watershed",
+          "h": 1.0,
+          "sigma": 0.0,
+          "val_caicedo_af1": 0.6190565188477298,
+          "val_aji": 0.7060953383553291
+        },
+        {
+          "decoder": "distance_watershed",
+          "h": 1.0,
+          "sigma": 1.0,
+          "val_caicedo_af1": 0.8693261943041908,
+          "val_aji": 0.8368166424389852
+        },
+        {
+          "decoder": "distance_watershed",
+          "h": 1.0,
+          "sigma": 2.0,
+          "val_caicedo_af1": 0.8649709951872931,
+          "val_aji": 0.8271593028109989
+        },
+        {
+          "decoder": "distance_watershed",
+          "h": 2.0,
+          "sigma": 0.0,
+          "val_caicedo_af1": 0.6050340750584893,
+          "val_aji": 0.6848517395185894
+        },
+        {
+          "decoder": "distance_watershed",
+          "h": 2.0,
+          "sigma": 1.0,
+          "val_caicedo_af1": 0.8518366674215472,
+          "val_aji": 0.8083380970089703
+        },
+        {
+          "decoder": "distance_watershed",
+          "h": 2.0,
+          "sigma": 2.0,
+          "val_caicedo_af1": 0.8452409969329452,
+          "val_aji": 0.7971054522336367
+        },
+        {
+          "decoder": "distance_watershed",
+          "h": 3.0,
+          "sigma": 0.0,
+          "val_caicedo_af1": 0.5901562776709176,
+          "val_aji": 0.6676713587784963
+        },
+        {
+          "decoder": "distance_watershed",
+          "h": 3.0,
+          "sigma": 1.0,
+          "val_caicedo_af1": 0.8309773209514293,
+          "val_aji": 0.7806460191305379
+        },
+        {
+          "decoder": "distance_watershed",
+          "h": 3.0,
+          "sigma": 2.0,
+          "val_caicedo_af1": 0.8263806051042046,
+          "val_aji": 0.7737978862945265
+        }
+      ],
+      "selected": {
+        "config": {
+          "decoder": "distance_watershed",
+          "h": 0.5,
+          "sigma": 1.0
+        },
+        "test_mean": {
+          "dice1": 0.9668472781417791,
+          "aji": 0.8349760170849865,
+          "dq": 0.9204969492493353,
+          "sq": 0.9098911569503845,
+          "pq": 0.8393587186394714,
+          "caicedo_af1": 0.8581129078782438
+        }
+      },
+      "locked": {
+        "config": {
+          "decoder": "components"
+        },
+        "test_mean": {
+          "dice1": 0.9668472781417791,
+          "aji": 0.6766061136032852,
+          "dq": 0.8141717062276368,
+          "sq": 0.9071927476340694,
+          "pq": 0.7406062961038797,
+          "caicedo_af1": 0.7501754908716001
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "frozen": "2026-10-31 ~19:20 CDT, before any IW-Cellpose validation or test outcome was viewed",
+  "agreed_by": "authors (fixed before the validation screen)",
+  "disclosure": "IW-Cellpose was motivated by earlier analyses of the same BBBC039 test images; freezing limits further adaptation but this is not an untouched confirmatory test.",
+  "weight_selection": {
+    "screen": "W in {3, 10}, seeds 0-1, 500 epochs, validation images only",
+    "per_run_decoder": "flow/cellprob thresholds maximising mean validation object F1 (grid order breaks ties), as in the baseline",
+    "score": "S(W) = mean selected validation object F1 over seeds 0-1",
+    "choice": "W maximising S(W); exact ties go to W=3",
+    "promotion": "promote to test only if S(W) - S(0) >= 0.002 AND neither seed is below its baseline seed; otherwise stop and test no other W"
+  },
+  "final": {
+    "frozen": "W, code, 500 epochs, seeds 0-9; each seed selects its decoder on validation only",
+    "primary_endpoint": "AJI; d_i = mean over seeds of (AJI_IW[s,i] - AJI_base[s,i]); effect = mean of 50 d_i",
+    "inference": "bootstrap 50 paired image ids, 10,000 draws, RNG seed 0, percentile 95% CI",
+    "claim_improvement_if": "effect >= 0.005 and CI lower bound > 0",
+    "claim_equivalence_if": "CI wholly within +/-0.005; otherwise 'inconclusive'",
+    "merge_guardrail": "pooled touching-nucleus merge rate IW - baseline: upper CI < +1 percentage point required; claim reduced merging only if upper CI < 0",
+    "secondary": ["object F1", "PQ", "splits", "small-nucleus misses"]
+  },
+  "controls_at_selected_W": {
+    "random_foreground": "5 seeds; per batch, after augmentation, weight exactly as many randomly sampled foreground pixels as contact pixels (separate RNG)",
+    "full_contour": "3 seeds; weight all nucleus contours with excess weight mass matched to the contact weighting per batch"
+  }
+}

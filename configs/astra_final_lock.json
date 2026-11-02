@@ -1,0 +1,424 @@
+{
+  "arm": "intensity200",
+  "code_sha256": "89e396d52d4e4d8c161d97d29c3c8fbf98cd0d58f844086c3d1032613a70e478",
+  "config_path": "configs/bbbc_astra_final_locked.json",
+  "decoders": {
+    "plain": {
+      "decoder": "component_nearest",
+      "threshold": 0.4
+    },
+    "tta8": {
+      "decoder": "component_nearest",
+      "threshold": 0.3
+    }
+  },
+  "primary_inference": "tta8",
+  "search_config_sha256": "1369add3ade37457b356685c034825aab3706c567f59214043a3341e0d805aa6",
+  "selection": "Mean two-seed validation TTA objF1, then AJI, then PQ",
+  "study": "bbbc_astra_final_locked_10seed",
+  "validation_ranking": [
+    {
+      "arm": "intensity200",
+      "modes": {
+        "plain": {
+          "config": {
+            "decoder": "component_nearest",
+            "threshold": 0.4
+          },
+          "diagnostics": {
+            "count_absolute_error": 498,
+            "merged": 549,
+            "merged_isolated": 41,
+            "merged_touching": 508,
+            "missed_large": 101,
+            "missed_small": 617,
+            "n_pred": 11294,
+            "n_ref": 11784,
+            "n_small": 1022,
+            "n_touching": 3450,
+            "split": 82
+          },
+          "mean": {
+            "aji": 0.9088049821488258,
+            "caicedo_af1": 0.9225038454410457,
+            "dice1": 0.9719073578607631,
+            "dq": 0.9610552933978472,
+            "pq": 0.8963188591360731,
+            "sq": 0.9324777022382453
+          },
+          "seed_objf1": [
+            0.9222974318089769,
+            0.9227102590731145
+          ]
+        },
+        "tta8": {
+          "config": {
+            "decoder": "component_nearest",
+            "threshold": 0.3
+          },
+          "diagnostics": {
+            "count_absolute_error": 482,
+            "merged": 551,
+            "merged_isolated": 38,
+            "merged_touching": 513,
+            "missed_large": 93,
+            "missed_small": 611,
+            "n_pred": 11318,
+            "n_ref": 11784,
+            "n_small": 1022,
+            "n_touching": 3450,
+            "split": 96
+          },
+          "mean": {
+            "aji": 0.909905906975064,
+            "caicedo_af1": 0.9235164854823976,
+            "dice1": 0.9725506556187948,
+            "dq": 0.9613653669630057,
+            "pq": 0.8979350727237663,
+            "sq": 0.9338297195993317
+          },
+          "seed_objf1": [
+            0.9234922312714798,
+            0.9235407396933155
+          ]
+        }
+      }
+    },
+    {
+      "arm": "focal200",
+      "modes": {
+        "plain": {
+          "config": {
+            "decoder": "component_nearest",
+            "threshold": 0.3
+          },
+          "diagnostics": {
+            "count_absolute_error": 539,
+            "merged": 596,
+            "merged_isolated": 48,
+            "merged_touching": 548,
+            "missed_large": 118,
+            "missed_small": 634,
+            "n_pred": 11251,
+            "n_ref": 11784,
+            "n_small": 1022,
+            "n_touching": 3450,
+            "split": 68
+          },
+          "mean": {
+            "aji": 0.9060915661161408,
+            "caicedo_af1": 0.9213032049007541,
+            "dice1": 0.9713723486104751,
+            "dq": 0.9597311171742597,
+            "pq": 0.8953018079943129,
+            "sq": 0.9326317958156685
+          },
+          "seed_objf1": [
+            0.9223534427043646,
+            0.9202529670971438
+          ]
+        },
+        "tta8": {
+          "config": {
+            "decoder": "nearest_marker",
+            "threshold": 0.3
+          },
+          "diagnostics": {
+            "count_absolute_error": 509,
+            "merged": 559,
+            "merged_isolated": 44,
+            "merged_touching": 515,
+            "missed_large": 98,
+            "missed_small": 635,
+            "n_pred": 11283,
+            "n_ref": 11784,
+            "n_small": 1022,
+            "n_touching": 3450,
+            "split": 82
+          },
+          "mean": {
+            "aji": 0.9089599623177108,
+            "caicedo_af1": 0.9231993988437998,
+            "dice1": 0.9721514240601301,
+            "dq": 0.9601189330671611,
+            "pq": 0.8972951011199561,
+            "sq": 0.9343509213939527
+          },
+          "seed_objf1": [
+            0.9229384806416618,
+            0.9234603170459377
+          ]
+        }
+      }
+    },
+    {
+      "arm": "lowlr200",
+      "modes": {
+        "plain": {
+          "config": {
+            "decoder": "component_nearest",
+            "threshold": 0.3
+          },
+          "diagnostics": {
+            "count_absolute_error": 502,
+            "merged": 574,
+            "merged_isolated": 49,
+            "merged_touching": 525,
+            "missed_large": 114,
+            "missed_small": 643,
+            "n_pred": 11286,
+            "n_ref": 11784,
+            "n_small": 1022,
+            "n_touching": 3450,
+            "split": 90
+          },
+          "mean": {
+            "aji": 0.9061919091723538,
+            "caicedo_af1": 0.9201403972514333,
+            "dice1": 0.9714379074758588,
+            "dq": 0.9586056113989592,
+            "pq": 0.8941122291330938,
+            "sq": 0.9324679520247927
+          },
+          "seed_objf1": [
+            0.9192833706823399,
+            0.9209974238205265
+          ]
+        },
+        "tta8": {
+          "config": {
+            "decoder": "component_nearest",
+            "threshold": 0.4
+          },
+          "diagnostics": {
+            "count_absolute_error": 518,
+            "merged": 559,
+            "merged_isolated": 38,
+            "merged_touching": 521,
+            "missed_large": 110,
+            "missed_small": 632,
+            "n_pred": 11274,
+            "n_ref": 11784,
+            "n_small": 1022,
+            "n_touching": 3450,
+            "split": 79
+          },
+          "mean": {
+            "aji": 0.9080284110121664,
+            "caicedo_af1": 0.9230988668738872,
+            "dice1": 0.972377586719718,
+            "dq": 0.9598613387102022,
+            "pq": 0.8971859050713125,
+            "sq": 0.9344921138291755
+          },
+          "seed_objf1": [
+            0.9234160199291798,
+            0.9227817138185946
+          ]
+        }
+      }
+    },
+    {
+      "arm": "long200",
+      "modes": {
+        "plain": {
+          "config": {
+            "decoder": "component_nearest",
+            "threshold": 0.5
+          },
+          "diagnostics": {
+            "count_absolute_error": 507,
+            "merged": 617,
+            "merged_isolated": 52,
+            "merged_touching": 565,
+            "missed_large": 118,
+            "missed_small": 612,
+            "n_pred": 11281,
+            "n_ref": 11784,
+            "n_small": 1022,
+            "n_touching": 3450,
+            "split": 65
+          },
+          "mean": {
+            "aji": 0.9058246877320227,
+            "caicedo_af1": 0.9221559873015451,
+            "dice1": 0.9715982650725499,
+            "dq": 0.960763861532521,
+            "pq": 0.8961211104461156,
+            "sq": 0.9325008855463905
+          },
+          "seed_objf1": [
+            0.9232733322371951,
+            0.9210386423658952
+          ]
+        },
+        "tta8": {
+          "config": {
+            "decoder": "component_nearest",
+            "threshold": 0.3
+          },
+          "diagnostics": {
+            "count_absolute_error": 475,
+            "merged": 573,
+            "merged_isolated": 39,
+            "merged_touching": 534,
+            "missed_large": 100,
+            "missed_small": 600,
+            "n_pred": 11319,
+            "n_ref": 11784,
+            "n_small": 1022,
+            "n_touching": 3450,
+            "split": 81
+          },
+          "mean": {
+            "aji": 0.9092335590087605,
+            "caicedo_af1": 0.9227218431798146,
+            "dice1": 0.9723155631943206,
+            "dq": 0.9618004150549858,
+            "pq": 0.8979934066334812,
+            "sq": 0.9334500947053384
+          },
+          "seed_objf1": [
+            0.9232394967303716,
+            0.9222041896292577
+          ]
+        }
+      }
+    },
+    {
+      "arm": "radius0_200",
+      "modes": {
+        "plain": {
+          "config": {
+            "decoder": "component_nearest",
+            "threshold": 0.3
+          },
+          "diagnostics": {
+            "count_absolute_error": 533,
+            "merged": 573,
+            "merged_isolated": 49,
+            "merged_touching": 524,
+            "missed_large": 131,
+            "missed_small": 631,
+            "n_pred": 11263,
+            "n_ref": 11784,
+            "n_small": 1022,
+            "n_touching": 3450,
+            "split": 87
+          },
+          "mean": {
+            "aji": 0.9044610573674103,
+            "caicedo_af1": 0.9192543392825109,
+            "dice1": 0.9710988886228333,
+            "dq": 0.9589601077426584,
+            "pq": 0.8931541059718511,
+            "sq": 0.9311753728474668
+          },
+          "seed_objf1": [
+            0.9202403907943855,
+            0.9182682877706363
+          ]
+        },
+        "tta8": {
+          "config": {
+            "decoder": "component_nearest",
+            "threshold": 0.3
+          },
+          "diagnostics": {
+            "count_absolute_error": 501,
+            "merged": 515,
+            "merged_isolated": 42,
+            "merged_touching": 473,
+            "missed_large": 98,
+            "missed_small": 632,
+            "n_pred": 11301,
+            "n_ref": 11784,
+            "n_small": 1022,
+            "n_touching": 3450,
+            "split": 93
+          },
+          "mean": {
+            "aji": 0.9088541521883116,
+            "caicedo_af1": 0.9222172962609927,
+            "dice1": 0.9720473463616393,
+            "dq": 0.9598944781822327,
+            "pq": 0.8961405187277174,
+            "sq": 0.933368869033689
+          },
+          "seed_objf1": [
+            0.9228536401480756,
+            0.9215809523739099
+          ]
+        }
+      }
+    },
+    {
+      "arm": "baseline40",
+      "modes": {
+        "plain": {
+          "config": {
+            "decoder": "component_nearest",
+            "threshold": 0.5
+          },
+          "diagnostics": {
+            "count_absolute_error": 597,
+            "merged": 684,
+            "merged_isolated": 63,
+            "merged_touching": 621,
+            "missed_large": 154,
+            "missed_small": 666,
+            "n_pred": 11193,
+            "n_ref": 11784,
+            "n_small": 1022,
+            "n_touching": 3450,
+            "split": 80
+          },
+          "mean": {
+            "aji": 0.8972274343103661,
+            "caicedo_af1": 0.917786105308898,
+            "dice1": 0.9710210766792808,
+            "dq": 0.957085018840662,
+            "pq": 0.8910528014989778,
+            "sq": 0.9308292748065431
+          },
+          "seed_objf1": [
+            0.9178940453178731,
+            0.9176781652999229
+          ]
+        },
+        "tta8": {
+          "config": {
+            "contact_scale": 1.0,
+            "decoder": "combined_watershed",
+            "threshold": 0.5
+          },
+          "diagnostics": {
+            "count_absolute_error": 579,
+            "merged": 653,
+            "merged_isolated": 64,
+            "merged_touching": 589,
+            "missed_large": 131,
+            "missed_small": 664,
+            "n_pred": 11211,
+            "n_ref": 11784,
+            "n_small": 1022,
+            "n_touching": 3450,
+            "split": 77
+          },
+          "mean": {
+            "aji": 0.9020086783830228,
+            "caicedo_af1": 0.9214204005302165,
+            "dice1": 0.9722655918486308,
+            "dq": 0.9580162737150129,
+            "pq": 0.8950142708296593,
+            "sq": 0.9340648935720888
+          },
+          "seed_objf1": [
+            0.9209483334729666,
+            0.9218924675874663
+          ]
+        }
+      }
+    }
+  ]
+}

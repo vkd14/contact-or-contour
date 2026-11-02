@@ -1,0 +1,20 @@
+{
+  "frozen": "2026-10-31T19:00-05:00, before any stratified test outcome was computed or viewed",
+  "agreed_by": "authors (fixed before analysis, 31 Oct 2026)",
+  "dataset": "BBBC039 official test split (50 images)",
+  "methods": ["semantic_watershed", "full_contour", "contact", "contact_native_tta", "cellpose3_scratch"],
+  "unit_of_analysis": "reference nucleus; per-image rates for paired image tests",
+  "strata": {
+    "touching": "reference nucleus shares an 8-neighbour boundary with another reference nucleus",
+    "isolated": "not touching",
+    "small": "reference area < 128 pixels",
+    "large": "reference area >= 128 pixels",
+    "image_density": "tertiles of the reference nucleus count per test image (computed from references only)"
+  },
+  "per_nucleus_outcomes": {
+    "merged": "nucleus's majority (>50% area) lies in a predicted object that also holds the majority of another reference nucleus",
+    "split": "nucleus holds the majority of >= 2 predicted objects",
+    "missed": "no predicted object with IoU > 0.5"
+  },
+  "statistics": "rates pooled per seed then mean (seed SD) over seeds; paired image-level differences with 10,000 image bootstrap resamples; no stratum or threshold is changed after viewing outcomes"
+}

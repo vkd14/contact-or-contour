@@ -1,0 +1,258 @@
+{
+  "model": "Cellpose 3 + contact head, random init",
+  "seed": 0,
+  "epochs": 500,
+  "train_diameter_px": 25.03996805109783,
+  "validation_grid": [
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": -1.0,
+      "tau": null,
+      "val_caicedo_af1": 0.898920555780271
+    },
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": -1.0,
+      "tau": 0.3,
+      "val_caicedo_af1": 0.897630658955496
+    },
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": -1.0,
+      "tau": 0.5,
+      "val_caicedo_af1": 0.8981752000299501
+    },
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": -1.0,
+      "tau": 0.7,
+      "val_caicedo_af1": 0.8982528071406202
+    },
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": 0.0,
+      "tau": null,
+      "val_caicedo_af1": 0.9036161229635613
+    },
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": 0.0,
+      "tau": 0.3,
+      "val_caicedo_af1": 0.9018058941863646
+    },
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": 0.0,
+      "tau": 0.5,
+      "val_caicedo_af1": 0.9024987725619137
+    },
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": 0.0,
+      "tau": 0.7,
+      "val_caicedo_af1": 0.9028334922994061
+    },
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": 1.0,
+      "tau": null,
+      "val_caicedo_af1": 0.887231098596394
+    },
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": 1.0,
+      "tau": 0.3,
+      "val_caicedo_af1": 0.8846677339186171
+    },
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": 1.0,
+      "tau": 0.5,
+      "val_caicedo_af1": 0.8851039869571506
+    },
+    {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": 1.0,
+      "tau": 0.7,
+      "val_caicedo_af1": 0.8862449605227464
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": -1.0,
+      "tau": null,
+      "val_caicedo_af1": 0.8955723840153641
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": -1.0,
+      "tau": 0.3,
+      "val_caicedo_af1": 0.8943087536195111
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": -1.0,
+      "tau": 0.5,
+      "val_caicedo_af1": 0.8948029909275322
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": -1.0,
+      "tau": 0.7,
+      "val_caicedo_af1": 0.8949174898544527
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": 0.0,
+      "tau": null,
+      "val_caicedo_af1": 0.9026904422396492
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": 0.0,
+      "tau": 0.3,
+      "val_caicedo_af1": 0.9008943617646524
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": 0.0,
+      "tau": 0.5,
+      "val_caicedo_af1": 0.9015419209999539
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": 0.0,
+      "tau": 0.7,
+      "val_caicedo_af1": 0.9018738649472116
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": 1.0,
+      "tau": null,
+      "val_caicedo_af1": 0.8851525939883671
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": 1.0,
+      "tau": 0.3,
+      "val_caicedo_af1": 0.8825457324531542
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": 1.0,
+      "tau": 0.5,
+      "val_caicedo_af1": 0.8830384997970997
+    },
+    {
+      "flow_threshold": 0.6,
+      "cellprob_threshold": 1.0,
+      "tau": 0.7,
+      "val_caicedo_af1": 0.8841726047592968
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": -1.0,
+      "tau": null,
+      "val_caicedo_af1": 0.8949926285470042
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": -1.0,
+      "tau": 0.3,
+      "val_caicedo_af1": 0.8936011515697188
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": -1.0,
+      "tau": 0.5,
+      "val_caicedo_af1": 0.8941513709660124
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": -1.0,
+      "tau": 0.7,
+      "val_caicedo_af1": 0.8943412425590664
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": 0.0,
+      "tau": null,
+      "val_caicedo_af1": 0.9025043099720423
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": 0.0,
+      "tau": 0.3,
+      "val_caicedo_af1": 0.9007155092012655
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": 0.0,
+      "tau": 0.5,
+      "val_caicedo_af1": 0.9013617104474136
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": 0.0,
+      "tau": 0.7,
+      "val_caicedo_af1": 0.9016904307403708
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": 1.0,
+      "tau": null,
+      "val_caicedo_af1": 0.8851119188667858
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": 1.0,
+      "tau": 0.3,
+      "val_caicedo_af1": 0.8825091821282507
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": 1.0,
+      "tau": 0.5,
+      "val_caicedo_af1": 0.8830015563349564
+    },
+    {
+      "flow_threshold": 0.8,
+      "cellprob_threshold": 1.0,
+      "tau": 0.7,
+      "val_caicedo_af1": 0.8840793712129832
+    }
+  ],
+  "train_seconds": 415.45468282699585,
+  "test_seconds": 27.16778039932251,
+  "selected": {
+    "config": {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": 0.0,
+      "tau": null,
+      "val_caicedo_af1": 0.9036161229635613
+    },
+    "mean": {
+      "dice1": 0.9703688696016876,
+      "aji": 0.8985523360250558,
+      "dq": 0.9532967794782365,
+      "sq": 0.9309859665076929,
+      "pq": 0.8883548998586209,
+      "caicedo_af1": 0.9131720008824814
+    }
+  },
+  "no_split": {
+    "config": {
+      "flow_threshold": 0.4,
+      "cellprob_threshold": 0.0,
+      "tau": null,
+      "val_caicedo_af1": 0.9036161229635613
+    },
+    "mean": {
+      "dice1": 0.9703688696016876,
+      "aji": 0.8985523360250558,
+      "dq": 0.9532967794782365,
+      "sq": 0.9309859665076929,
+      "pq": 0.8883548998586209,
+      "caicedo_af1": 0.9131720008824814
+    }
+  }
+}

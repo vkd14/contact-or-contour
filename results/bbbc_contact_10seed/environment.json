@@ -1,0 +1,55 @@
+{
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "protocol_sha256": "0510b1ae502c1618e543a1bfd4214434551f96df2d38fd9c1f7efa5cb50a63cd",
+  "config": {
+    "dataset": "BBBC039v1 official split",
+    "task": "Instance segmentation via full-foreground and touching-contact heads",
+    "purpose": "Locked ten-seed evaluation of contact-aware separation on the official test set",
+    "models": {
+      "vanilla_contact_b7": "vanilla_b7",
+      "gabor_contact_b7": "gabor_b7"
+    },
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "epochs": 20,
+    "batch_size": 8,
+    "image_size": 512,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "contact_weight": 0.5,
+    "contact_radius": 1,
+    "contact_thresholds": [
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7
+    ],
+    "augmentation": "uniform rotations by multiples of 90 degrees and horizontal flip with probability 0.5",
+    "loss": "foreground Dice+BCE plus 0.5 times contact-boundary Dice+positive-weighted BCE",
+    "selection": "highest validation Caicedo object-F1; contact threshold selected on validation only",
+    "postprocessing": "remove predicted contact pixels from foreground to form markers, then assign all foreground pixels to their nearest marker",
+    "primary_endpoint": "Caicedo average object F1 over IoU thresholds 0.50 to 0.90",
+    "secondary_endpoints": [
+      "DICE1",
+      "DICE2",
+      "AJI",
+      "DQ",
+      "SQ",
+      "PQ"
+    ]
+  }
+}

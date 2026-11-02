@@ -1,0 +1,71 @@
+{
+  "run": "bbbc_contour_10seed/vanilla_contour_b7_s1",
+  "selected": {
+    "decoder": "component_preserving",
+    "threshold": 0.6
+  },
+  "validation_grid": [
+    {
+      "decoder": "component_preserving",
+      "threshold": 0.3,
+      "val_caicedo_af1": 0.9032329884129726
+    },
+    {
+      "decoder": "component_preserving",
+      "threshold": 0.4,
+      "val_caicedo_af1": 0.9069932186810264
+    },
+    {
+      "decoder": "component_preserving",
+      "threshold": 0.5,
+      "val_caicedo_af1": 0.9086126667379598
+    },
+    {
+      "decoder": "component_preserving",
+      "threshold": 0.6,
+      "val_caicedo_af1": 0.9090352255167385
+    },
+    {
+      "decoder": "component_preserving",
+      "threshold": 0.7,
+      "val_caicedo_af1": 0.9049092075597328
+    },
+    {
+      "decoder": "contact_watershed",
+      "threshold": 0.3,
+      "val_caicedo_af1": 0.8994727373532411
+    },
+    {
+      "decoder": "contact_watershed",
+      "threshold": 0.4,
+      "val_caicedo_af1": 0.9028128906713462
+    },
+    {
+      "decoder": "contact_watershed",
+      "threshold": 0.5,
+      "val_caicedo_af1": 0.9035311343043162
+    },
+    {
+      "decoder": "contact_watershed",
+      "threshold": 0.6,
+      "val_caicedo_af1": 0.903309235295615
+    },
+    {
+      "decoder": "contact_watershed",
+      "threshold": 0.7,
+      "val_caicedo_af1": 0.8989842532649152
+    }
+  ],
+  "test_mean": {
+    "dice1": 0.9673567985083501,
+    "dice2": 0.8250230575080383,
+    "aji": 0.8704201228150988,
+    "dq": 0.9433204599970378,
+    "sq": 0.9178616934560943,
+    "pq": 0.8673988299293746,
+    "caicedo_af1": 0.8943889305071303,
+    "symmetric_best_dice": 0.8891334301605701,
+    "n_reference": 114.4,
+    "n_prediction": 107.42
+  }
+}

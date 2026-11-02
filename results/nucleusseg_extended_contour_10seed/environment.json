@@ -1,0 +1,63 @@
+{
+  "torch": "2.12.0.dev20260326+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "protocol_sha256": "8c676c36fa92d11c70796802b29947ffe21d31185bfc28b20baf10f0f0f8d082",
+  "dataset_version": "extended",
+  "config": {
+    "dataset": "NucleusSegDataExtended official AttentionBoost split",
+    "purpose": "Matched target ablation: identical model, loss, training-image selection and decoder, but the second head learns all nucleus contours instead of only nucleus-nucleus contacts.",
+    "image_size": 512,
+    "batch_size": 2,
+    "epochs": 60,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "contact_weight": 0.5,
+    "contact_radius": 1,
+    "foreground_threshold": 0.5,
+    "contact_thresholds": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7
+    ],
+    "min_sizes": [
+      16,
+      32,
+      64,
+      128
+    ],
+    "models": {
+      "standard_contour_b7": "vanilla_b7"
+    },
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "augmentation": "Uniform 90-degree rotations and independent horizontal and vertical flips with probability 0.5.",
+    "selection": "Fixed final epoch; contact threshold and minimum instance size selected using official training images only; test images decoded once.",
+    "test_time_augmentation": false,
+    "primary_endpoint": "Bilkent nucleus-level micro F1, reported separately for Huh7 and HepG2.",
+    "published_comparator": "AttentionBoost: Huh7 F1 0.954 +/- 0.005; HepG2 F1 0.919 +/- 0.008 over five runs.",
+    "target": "full_contour"
+  },
+  "archive_sha256": "31c382666dd8b6d4f5989c468998e932bb38bd5288d8ae37317baa94fbdff111",
+  "code_sha256": {
+    "scripts/train_nucleusseg_contact.py": "b8c1fa4bb98e33071b0fe8d7f0e9c33846cc7327a5de1f53a68cdbb943a865ee",
+    "src/breastseg/core.py": "d64a0167ac96c8a0d372592b624ac4414a624321c525d46847e8d010bede08f3",
+    "src/breastseg/data.py": "debafa2c60734c2bd7c85931ee27735699d2a194a5ffdf80b4adee8277e38cdf",
+    "src/breastseg/instance_metrics.py": "a2d47c2ca4b7cef640f948ad81a073b42abc9a948a2d259536b077f13acfd435"
+  }
+}

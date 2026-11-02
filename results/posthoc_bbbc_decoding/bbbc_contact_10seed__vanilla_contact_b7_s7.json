@@ -1,0 +1,180 @@
+{
+  "run": "bbbc_contact_10seed/vanilla_contact_b7_s7",
+  "variant": "vanilla_b7",
+  "kind": "contact",
+  "selection": "official validation split, mean Caicedo object F1",
+  "settings": {
+    "plain": {
+      "inference_seconds_100_images": 2.0489792823791504,
+      "validation_grid": [
+        {
+          "decoder": "nearest_marker",
+          "threshold": 0.3,
+          "val_caicedo_af1": 0.8877204359123138,
+          "val_aji": 0.8770836208730916
+        },
+        {
+          "decoder": "nearest_marker",
+          "threshold": 0.4,
+          "val_caicedo_af1": 0.8913386252313888,
+          "val_aji": 0.8791425316131206
+        },
+        {
+          "decoder": "nearest_marker",
+          "threshold": 0.5,
+          "val_caicedo_af1": 0.8931070038120019,
+          "val_aji": 0.881015373666183
+        },
+        {
+          "decoder": "nearest_marker",
+          "threshold": 0.6,
+          "val_caicedo_af1": 0.8954183412781461,
+          "val_aji": 0.8832348462237567
+        },
+        {
+          "decoder": "nearest_marker",
+          "threshold": 0.7,
+          "val_caicedo_af1": 0.8982656081108468,
+          "val_aji": 0.8848131920983769
+        },
+        {
+          "decoder": "contact_watershed",
+          "threshold": 0.3,
+          "val_caicedo_af1": 0.8905547658483906,
+          "val_aji": 0.8797582496038039
+        },
+        {
+          "decoder": "contact_watershed",
+          "threshold": 0.4,
+          "val_caicedo_af1": 0.8933222683859547,
+          "val_aji": 0.8807043080814831
+        },
+        {
+          "decoder": "contact_watershed",
+          "threshold": 0.5,
+          "val_caicedo_af1": 0.8942529507508838,
+          "val_aji": 0.8819658876150541
+        },
+        {
+          "decoder": "contact_watershed",
+          "threshold": 0.6,
+          "val_caicedo_af1": 0.8958069757784354,
+          "val_aji": 0.8837411230073974
+        },
+        {
+          "decoder": "contact_watershed",
+          "threshold": 0.7,
+          "val_caicedo_af1": 0.8982241559945617,
+          "val_aji": 0.8851942667933669
+        }
+      ],
+      "selected": {
+        "config": {
+          "decoder": "nearest_marker",
+          "threshold": 0.7
+        },
+        "test_mean": {
+          "dice1": 0.963166428232888,
+          "aji": 0.8734562541577074,
+          "dq": 0.9398791494161312,
+          "sq": 0.910307800858177,
+          "pq": 0.8568694684482199,
+          "caicedo_af1": 0.8854142982033895
+        }
+      },
+      "locked": {
+        "config": {
+          "decoder": "nearest_marker",
+          "threshold": 0.7
+        },
+        "test_mean": {
+          "dice1": 0.963166428232888,
+          "aji": 0.8734562541577074,
+          "dq": 0.9398791494161312,
+          "sq": 0.910307800858177,
+          "pq": 0.8568694684482199,
+          "caicedo_af1": 0.8854142982033895
+        }
+      }
+    },
+    "tta8": {
+      "inference_seconds_100_images": 11.501463174819946,
+      "validation_grid": [
+        {
+          "decoder": "nearest_marker",
+          "threshold": 0.3,
+          "val_caicedo_af1": 0.8908002670407721,
+          "val_aji": 0.8877017302817681
+        },
+        {
+          "decoder": "nearest_marker",
+          "threshold": 0.4,
+          "val_caicedo_af1": 0.8979669605428245,
+          "val_aji": 0.8914486185410962
+        },
+        {
+          "decoder": "nearest_marker",
+          "threshold": 0.5,
+          "val_caicedo_af1": 0.9029598018505373,
+          "val_aji": 0.8934585199589159
+        },
+        {
+          "decoder": "nearest_marker",
+          "threshold": 0.6,
+          "val_caicedo_af1": 0.903310272280178,
+          "val_aji": 0.8932144742422191
+        },
+        {
+          "decoder": "nearest_marker",
+          "threshold": 0.7,
+          "val_caicedo_af1": 0.9062087862136443,
+          "val_aji": 0.8937729636708301
+        },
+        {
+          "decoder": "contact_watershed",
+          "threshold": 0.3,
+          "val_caicedo_af1": 0.8946488135422085,
+          "val_aji": 0.8896233451877217
+        },
+        {
+          "decoder": "contact_watershed",
+          "threshold": 0.4,
+          "val_caicedo_af1": 0.9005131310468777,
+          "val_aji": 0.8924377168677258
+        },
+        {
+          "decoder": "contact_watershed",
+          "threshold": 0.5,
+          "val_caicedo_af1": 0.9044598827435999,
+          "val_aji": 0.8941047185082993
+        },
+        {
+          "decoder": "contact_watershed",
+          "threshold": 0.6,
+          "val_caicedo_af1": 0.9045756242338592,
+          "val_aji": 0.8934609399859821
+        },
+        {
+          "decoder": "contact_watershed",
+          "threshold": 0.7,
+          "val_caicedo_af1": 0.9069617149768147,
+          "val_aji": 0.8941648769251779
+        }
+      ],
+      "selected": {
+        "config": {
+          "decoder": "contact_watershed",
+          "threshold": 0.7
+        },
+        "test_mean": {
+          "dice1": 0.9691088234313076,
+          "aji": 0.8862826721814538,
+          "dq": 0.946368038012881,
+          "sq": 0.9222274543539747,
+          "pq": 0.8740171713775954,
+          "caicedo_af1": 0.8994700693187455
+        }
+      }
+    }
+  }
+}
