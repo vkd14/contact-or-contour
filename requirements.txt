@@ -1,5 +1,5 @@
 # Versions used for the reported results (Python 3.12.3, CUDA 12.8)
-torch==2.12.0.dev20260326  # nightly build with RTX 5090 support; any torch>=2.6 with CUDA should work
+torch>=2.6  # paper used the nightly 2.12.0.dev20260326 (RTX 5090, CUDA 12.8); any CUDA build >=2.6 should work
 segmentation-models-pytorch==0.5.0
 numpy==2.4.3
 scipy==1.17.1

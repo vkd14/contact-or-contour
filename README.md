@@ -41,7 +41,7 @@ repository uses breast data.
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt        # versions used for the paper; any torch>=2.6 with CUDA should work
+pip install -r requirements.txt        # torch: install a CUDA build for your GPU first (paper: nightly 2.12.0.dev20260326)
 export PYTHONPATH=src:scripts
 ```
 
@@ -69,6 +69,7 @@ These scripts read `results/` only. Re-running them reproduces the committed JSO
 python scripts/analyze_boundary_vs_target.py      # boundary head vs. target, AJI and object F1 (Sec. 4.1, 4.4)
 python scripts/analyze_boundary_head_effect.py    # boundary head vs. watershed baseline
 python scripts/analyze_merge_robustness.py        # merged-touching rates, image and two-way bootstrap
+python scripts/analyze_twoway_headline.py         # seed x image bootstrap for boundary-head and target contrasts
 python scripts/analyze_decoder_fix_effect.py      # effect of the decoder correction per target
 python scripts/analyze_panel_v6_stats.py          # merge interval, two-way object F1, Huh7/HepG2 t-intervals
 python scripts/analyze_tta_cp.py                  # Table 1 final-setting rows
@@ -146,7 +147,8 @@ Each script's docstring states its inputs, selection rule and outputs.
 | Table 1 Cellpose / contact head | `results/cellpose_bbbc_scratch/`, `results/contact_cellpose_bbbc_scratch/` |
 | Contact-weighted Cellpose screen | `results/iw_cellpose_search/decision.json` |
 | Two-way seed × image bootstrap | `results/twoway_bootstrap_current.json`, `results/panel_v6_stats.json` |
-| Boundary head vs. target (AJI, object F1) | `results/boundary_vs_target.json`, `results/boundary_head_effect.json` |
+| Boundary head vs. target (AJI, object F1) | `results/boundary_vs_target.json`, `results/boundary_head_effect.json`, two-way CIs `results/twoway_headline.json` |
+| Gabor-encoder contact variant (Sec. 3, not analysed) | `results/bbbc_contact_10seed/aggregate.json` |
 | Fig. 2, Sec. 4.2 | `results/bbbc_stratified_comparison.json`, `results/bbbc_merge_split/`, `results/merge_robustness.json`, `results/small_native.json` |
 | Fig. 3 | `results/design_effects.json` |
 | Decoder correction | `results/decoder_fix_effect.json`, `results/panel_v6_stats.json` |
